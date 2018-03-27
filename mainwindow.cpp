@@ -93,7 +93,7 @@ void MainWindow::on_action_save_triggered()
 void MainWindow::on_action_save_as_triggered()
 {
     FileName = QFileDialog::getSaveFileName(this,
-        tr("Открыть файл..."), FileName , tr("Text files (*.txt)"));
+        tr("Сохранить файл..."), FileName , tr("Text files (*.txt)"));
 
     if (!FileName.isEmpty())
         this->setWindowTitle(FileName);
